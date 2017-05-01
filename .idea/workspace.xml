@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34318530-c042-45bf-ac18-2fc4124a01ca" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
-    </list>
+    <list default="true" id="34318530-c042-45bf-ac18-2fc4124a01ca" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -95,7 +92,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
+              <folding>
+                <marker date="1493651256793" expanded="true" signature="0:436" ph="{...}" />
+                <marker date="1493651256793" expanded="true" signature="15:44" ph="{&quot;node&quot;: &quot;&gt;= 0.10.0&quot;...}" />
+                <marker date="1493651256793" expanded="true" signature="230:434" ph="{&quot;require&quot;: &quot;^2.4.20&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -478,12 +479,12 @@
       <workItem from="1492933586165" duration="1997000" />
       <workItem from="1492936907527" duration="2346000" />
       <workItem from="1493616269325" duration="820000" />
-      <workItem from="1493617951961" duration="10697000" />
+      <workItem from="1493617951961" duration="10978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65439000" />
+    <option name="totallyTimeSpent" value="65720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
@@ -954,7 +955,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
+          <folding>
+            <marker date="1493651256793" expanded="true" signature="0:436" ph="{...}" />
+            <marker date="1493651256793" expanded="true" signature="15:44" ph="{&quot;node&quot;: &quot;&gt;= 0.10.0&quot;...}" />
+            <marker date="1493651256793" expanded="true" signature="230:434" ph="{&quot;require&quot;: &quot;^2.4.20&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
