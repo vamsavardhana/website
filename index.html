@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html ng-app='gemstore' lang="en" >
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+          >
+        <!--link rel="stylesheet" ref="bower_components/bootstrap/dist/css/bootstrap.min.css"-->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="public/javascripts/app.js"></script>
+        <script src="bower_components/google-code-prettify/bin/prettify.min.css"></script>
+</head>
+<body ng-controller="StoreController as store">
+
+        <div class="container">
+            <div class="row" ng-repeat="products in store.product">
+            <div class="col-sm-3"><h1>{{products.name}}</h1></div>
+            <div class="col-sm-3"><h3>{{products.desc}}</h3></div>
+            <div class="col-sm-3"><h2>{{products.cost}}</h2></div>
+                <button class="pull-center"ng-show="store.product.present" ng-hide="store.product.hiding">Add to cart</button>
+            </div>
+        </div>
+        <pre>
+            <pre class="prettyprint lang-java">
+                import java.io.BufferedReader;
+                import java.io.FileNotFoundException;
+                import java.io.FileReader;
+                import java.io.IOException;
+                import java.util.ArrayList;
+                import java.util.HashMap;
+                import java.util.Iterator;
+                import java.util.List;
+                import java.util.Map;
+                import java.util.StringTokenizer;
+
+
+                public class Ford2 {
+
+                    static Map<String, Integer> map=new HashMap<String, Integer>();
+                    Ford2(){
+
+                    }
+
+
+                    /**
+                     * @param args
+                     * @throws FileNotFoundException,IOException
+                     */
+                    public static void main(String[] args) throws FileNotFoundException,IOException {
+                        // TODO Auto-generated method stub
+                        BufferedReader a=new BufferedReader(new FileReader("plain.txt"));
+                        BufferedReader a1=new BufferedReader(new FileReader("accl.txt"));
+
+                        Map<String,String> map=new HashMap<String,String>();
+                        Map<String,String> map1=new HashMap<String,String>();
+
+                        String b;String b1;
+
+                        try {
+                            while((b=a.readLine())!=null)
+                            {
+                                StringTokenizer c= new StringTokenizer(b,"....");
+                                while(c.hasMoreTokens())
+                                {
+                                    String e=c.nextToken().toString();
+                                    String f=c.nextToken().toString();
+                                    map.put(e,f);
+                                }
+                            }
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            while((b1=a1.readLine())!=null)
+                            {
+                                StringTokenizer c= new StringTokenizer(b1,"....");
+                                while(c.hasMoreTokens())
+                                {
+                                    String e=c.nextToken().toString();
+                                    String f=c.nextToken().toString();
+                                    map1.put(e,f);
+                                }
+                            }
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            e.printStackTrace();
+                        }
+
+                        /*for(int i=0;i<map.size();i++)
+                        {
+                            System.out.println(map.get(i));
+                            if(map1.containsKey(map.get(i)))
+                            {
+                                System.out.println(map.get(i)+".............");
+                                map1.remove(map.get(i));
+                            }
+                        }*/
+
+                        Iterator it=map1.entrySet().iterator();
+                        while(it.hasNext())
+                        {
+                            Map.Entry<String, String> pair= (Map.Entry<String, String>)it.next();
+                            if(map.containsKey(pair.getKey()))
+                                    {
+                                    it.remove();
+                                    }
+                        }
+                        Iterator it1=map1.entrySet().iterator();
+                        while(it1.hasNext())
+                        {
+                            Map.Entry<String, String> pair= (Map.Entry<String, String>)it1.next();
+                            System.out.println(pair.getKey()+"...."+pair.getValue());
+                        }
+
+
+                    }
+
+                }
+
+            </pre>
+        </pre>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
+</body>
+</html>
