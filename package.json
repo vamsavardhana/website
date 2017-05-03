@@ -12,11 +12,11 @@
     "require": "^2.4.20"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "name": "gemstore",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "description": ""
